@@ -1,3 +1,3 @@
 # README
 
-[Upskill](http://upskillcourses.com) Software-as-a-Service Ruby on Rails App
+This is the code for TINA's website.
