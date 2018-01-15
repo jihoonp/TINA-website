@@ -20,8 +20,12 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-h1, h2, h3 {
+h1, h2, h3, .homepage-description {
     font-family: 'Quicksand', sans-serif;
+}
+
+.homepage-description-box {
+  width: 200px;
 }
 
 .navbar-brand {
@@ -29,17 +33,21 @@ h1, h2, h3 {
   font-weight: 800;
 }
 
+// color for menu bar with 3 liens on the top right when the screen is too small
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: white;
+  background-color: black;
 }
+
+// hover color for the 3 menu bar
+// TODO: does not show up well, fix
 .navbar-default .navbar-toggle {
   border: 2px solid white;
   &:hover, &:focus {
-    background-color: #00c6ff;
+    background-color: white;
   }
 }
 
-.navbar, .home-callout {
+.home-callout {
     background: #74ebd5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -55,12 +63,19 @@ h1, h2, h3 {
 // Nav Styles
 .navbar {
   border: none;
+  background: white;
+  border-bottom: 2px solid gray;
 }
+
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
-  color: white;
+  color: black;
   &:hover {
-    color: white;
-    opacity: 0.75;
+    color: black;
+    opacity: 0.50;
   }
+}
+
+.homepage-description {
+  text-align:center;
 }
